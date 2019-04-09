@@ -1,17 +1,13 @@
 import angular from 'angular';
 
-require('textangular/dist/textAngular-sanitize');
-require('textangular/dist/textAngularSetup');
-require('textangular/dist/textAngular');
-
+require('textangularjs/dist/textAngular-sanitize.min');
 require('angular-ui-codemirror');
 
 var CrudModule = angular.module('crud', [
     'ui.router',
     'ui.bootstrap',
     'ui.codemirror',
-    'ngSanitize',
-    'textAngular',
+    require('textAngularjs'),
     'ngInflection',
     'ngFileUpload',
     'ngNumeraljs',
